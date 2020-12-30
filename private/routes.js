@@ -6,6 +6,10 @@ module.exports = function (app) {
   // HTML ROUTES
   // ===============================================================================
 
+  app.get("/", function (req, res) {
+    res.render("pages/index");
+  });
+
   app.get("/gwen", function (req, res) {
     res.render("pages/gwen");
   });
@@ -16,6 +20,10 @@ module.exports = function (app) {
 
   app.get("/aboutme", function (req, res) {
     res.render("pages/aboutme");
+  });
+
+  app.get("/misc", function (req, res) {
+    res.render("pages/misc");
   });
 
   // If no matching route is found default to home
