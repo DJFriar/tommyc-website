@@ -6,6 +6,7 @@ var path = require("path");
 // ==============================================================================
 var app = express();
 var PORT = process.env.PORT || 3500;
+app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));

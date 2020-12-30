@@ -1,5 +1,5 @@
 var path = require("path");
-var fs = require("fs");
+// var fs = require("fs");
 
 module.exports = function (app) {
   // ===============================================================================
@@ -7,15 +7,19 @@ module.exports = function (app) {
   // ===============================================================================
 
   app.get("/gwen", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/gwen.html"));
+    res.render("pages/gwen");
   });
 
   app.get("/photography", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/photography.html"));
+    res.render("pages/photography");
+  });
+
+  app.get("/aboutme", function (req, res) {
+    res.render("pages/aboutme");
   });
 
   // If no matching route is found default to home
   app.get("*", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
+    res.render("pages/index");
   });
 };
