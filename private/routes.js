@@ -30,6 +30,10 @@ module.exports = function (app) {
     res.render("pages/devresume");
   });
 
+  app.get("/riderresume", function (req, res) {
+    res.render("pages/riderresume");
+  });
+
   // If no matching route is found default to home
   app.get("*", function (req, res) {
     res.render("pages/index");
