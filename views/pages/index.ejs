@@ -4,8 +4,8 @@
 		<%- include('../partials/head'); %>
 </head>
 <body>
+	<div class="gradientbar"></div>
 	<div class="container" uk-height-viewport="expand: true">
-		<div class="gradientbar"></div>
 
 		<div>&nbsp;</div>
 		<div class="uk-position-center">
@@ -40,11 +40,30 @@
 			</div>
 			
 			<div class="uk-width-1-1@s">
-				<ul class="uk-nav uk-nav-default uk-nav-center">
+				<ul class="uk-nav-default uk-nav-center" uk-nav>
 					<li><a href="/aboutme">About Me</a></li>
-					<li><a href="/dev">Development</a></li>
-					<li><a href="/gwen">Motorcycling</a></li>
-					<li><a href="/photography">Photography</a></li>
+					<li class="uk-parent">
+						<a href="#">Development</a>
+						<ul class="uk-nav-sub">
+							<li><a href="/portfolio">Portfolio</a></li>
+							<li><a href="/devresume">Resume</a></li>
+							<li><a href="/devmisc">Thoughts</a></li>
+						</ul>
+					</li>
+					<li class="uk-parent">
+						<a href="#">Motorcycling</a>
+						<ul class="uk-nav-sub">
+							<li><a href="/gwen">Gwen</a></li>
+							<li><a href="/ridereports">Ride Reports</a></li>
+						</ul>
+					</li>
+					<li class="uk-parent">
+						<a href="#">Photography</a>
+						<ul class="uk-nav-sub">
+							<li><a href="/photogear">My Gear</a></li>
+							<li><a href="/photography">Portfolio</a></li>
+						</ul>
+					</li>
 					<li><a href="/misc">Potpourri</a></li>
 				</ul>
 			</div>

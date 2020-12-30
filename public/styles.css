@@ -20,6 +20,23 @@ h2 {
   margin: 0px;
 }
 
+h3 {
+  font-size: 2.5em;
+  color: #fff;
+  margin: 0px;
+}
+
+h4 {
+  font-size: 2em;
+  color: #fff;
+  margin: 0px;
+}
+
+h5 {
+  font-size: 1.5em;
+  color: #fff;
+}
+
 #subtitle {
   font-size: 1em;
   color: #ffffffcc;
@@ -36,6 +53,13 @@ h2 {
 .uk-nav a:visited {
   color: #ffffffcc;
   opacity: 0.9;
+}
+
+.uk-nav-sub {
+  font-size: 0.8em;
+  line-height: 1.3em;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
 }
 
 .gradientbar {
@@ -64,4 +88,8 @@ a.hidden-link:visited {
 
 a.hidden-link:hover {
   color: #666;
+}
+
+.container {
+  padding: 12px;
 }

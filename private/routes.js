@@ -26,6 +26,10 @@ module.exports = function (app) {
     res.render("pages/misc");
   });
 
+  app.get("/devresume", function (req, res) {
+    res.render("pages/devresume");
+  });
+
   // If no matching route is found default to home
   app.get("*", function (req, res) {
     res.render("pages/index");
