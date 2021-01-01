@@ -37,6 +37,17 @@ h5 {
   color: #fff;
 }
 
+h6 {
+  font-size: 1.25em;
+  color: #fff;
+  margin-top: 30px;
+}
+
+img.report-image {
+  border-radius: 12px;
+  height: 325px;
+}
+
 #songlyric {
   text-align: center;
   font-size: 1em;
@@ -123,4 +134,13 @@ a.hidden-link:hover {
 
 .container {
   padding: 12px;
+}
+
+.tuck-content {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+footer {
+  font-size: 0.75em;
 }

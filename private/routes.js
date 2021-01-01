@@ -34,6 +34,18 @@ module.exports = function (app) {
     res.render("pages/riderresume");
   });
 
+  app.get("/ridereports", function (req, res) {
+    res.render("pages/ridereports/ridereports");
+  });
+
+  app.get("/ridereports/iba1", function (req, res) {
+    res.render("pages/ridereports/iba1");
+  });
+
+  app.get("/ridereports/iba2", function (req, res) {
+    res.render("pages/ridereports/iba2");
+  });
+
   // If no matching route is found default to home
   app.get("*", function (req, res) {
     res.render("pages/index");
