@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<%- include('../partials/head'); %>
+	</head>
+	<body>
+		<div class="container" uk-height-viewport="expand: true">
+			<div class="gradientbar"></div>
+			<%- include('../partials/topnav'); %>
+			<main>
+				<p>Below you will find my development portfolio.</p>
+				<div uk-grid>
+					<div>
+						<img data-src="/images/dev/password-generator.png" alt="Code Quiz Screenshot" class="reportImage" uk-img uk-toggle="target: #codequiz">
+						<h6>Password Generator</h6>
+						<ul>
+							<li>Language: JavaScript</li>
+							<li><a href="https://github.com/DJFriar/SMU-Homework-04-Code-Quiz">Source Code</a></li>
+							<li><a href="https://djfriar.github.io/SMU-Homework-04-Code-Quiz/">Deployed Site</a></li>
+						</ul>
+					</div>
+					<div>
+						<img data-src="/images/dev/password-generator.png" alt="Password Generator Screenshot" class="reportImage" uk-img uk-toggle="target: #pwgen">
+						<h6>Password Generator</h6>
+						<ul>
+							<li>Language: JavaScript</li>
+							<li><a href="https://github.com/DJFriar/SMU-Homework-03-Password-Generator">Source Code</a></li>
+							<li><a href="https://djfriar.github.io/SMU-Homework-03-Password-Generator/">Deployed Site</a></li>
+						</ul>
+					</div>
+				</div>
+				<div uk-grid>
+					<div>
+						<img data-src="/images/gwen.jpeg" alt="2018 Honda Gold Wing Tour DCT" class="reportImage" uk-img uk-toggle="target: #gwen">
+						<h6>Tour of Honor (iOS and Android)</h6>
+						<ul>
+							<li>Language: SwiftUI (iOS) and Java (Android)</li>
+							<li>Source Code: </li>
+							<li>App Store Link: </li>
+						</ul>
+					</div>
+					<div>
+						<img data-src="/images/dev/password-generator.png" alt="Password Generator Screenshot" class="reportImage" uk-img uk-toggle="target: #pwgen">
+						<h6>Password Generator</h6>
+						<ul>
+							<li>Language: JavaScript</li>
+							<li><a href="https://github.com/DJFriar/SMU-Homework-03-Password-Generator">Source Code</a></li>
+							<li><a href="https://djfriar.github.io/SMU-Homework-03-Password-Generator/">Deployed Site</a></li>
+						</ul>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer>
+				<%- include('../partials/footer'); %>
+		</footer>
+		<div id="gwen"class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+				<h4 class="uk-modal-title">Tour of Honor</h4>
+				<img data-src="/images/gwen.jpeg" alt="2018 Honda Gold Wing Tour DCT" class="modalImage" uk-img>
+			</div>
+		</div>
+		<div id="pwgen"class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+				<h4 class="uk-modal-title">Password Generator</h4>
+				<img data-src="/images/dev/password-generator.png" alt="Password Generator Screenshot" class="modalImage" uk-img>
+			</div>
+		</div>
+		<div id="codequiz"class="uk-modal-full" uk-modal>
+			<div class="uk-modal-dialog uk-modal-body">
+				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+				<h4 class="uk-modal-title">Code Quiz</h4>
+				<img data-src="/images/dev/code-quiz.png" alt="Code Quiz Screenshot" class="modalImage" uk-img>
+			</div>
+		</div>
+	</body>
+</html>

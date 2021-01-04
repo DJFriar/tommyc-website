@@ -29,6 +29,10 @@ module.exports = function (app) {
   app.get("/devresume", function (req, res) {
     res.render("pages/devresume");
   });
+  
+  app.get("/devportfolio", function (req, res) {
+    res.render("pages/portfolio");
+  });
 
   app.get("/riderresume", function (req, res) {
     res.render("pages/riderresume");
