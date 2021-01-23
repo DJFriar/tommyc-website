@@ -12,3 +12,13 @@ function getRandomLyric() {
   var randomNumber = Math.floor(Math.random() * lyrics.length);
   document.getElementById("songlyric").innerHTML = lyrics[randomNumber];
 }
+
+// Artists for the above lyrics
+// Karn Evil 9 1st Impression Part 2 by Emerson, Lake & Palmer
+// Devil's Train by Lab Rats
+// Be Like That by Kane Brown
+// Start It Up by Lloyd Banks
+// Crooked Smile by J. Cole
+// Soundtrack of my Life by Less Than Jake
+// Drift Away by Uncle Cracker
+//
