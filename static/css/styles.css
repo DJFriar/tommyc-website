@@ -146,6 +146,7 @@ img.modalImage {
   background: linear-gradient(90deg, blue 0%, #7c00c1 30%, #c30a0a 100%);
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 100;
 }
 
