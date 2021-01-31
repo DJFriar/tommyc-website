@@ -108,25 +108,31 @@ img.modalImage {
 }
 
 .uk-navbar-dropdown {
-  color: #666;
   opacity: 1;
   box-shadow: none;
-  background: #ffffff;
+  background: #2c3038;
 }
 
 #master-topnav .uk-navbar-nav .uk-navbar-dropdown li a:link,
 #master-topnav .uk-navbar-nav .uk-navbar-dropdown li a:visited {
   font-size: 0.8em;
   font-family: "Acme", sans-serif !important;
+  color: #999;
+}
+
+#master-topnav .uk-navbar-nav .uk-navbar-dropdown li a:hover,
+#master-topnav .uk-navbar-nav .uk-navbar-dropdown li a:active {
   color: #666;
 }
 
+/* This is for the home page nav */
 .uk-nav a:link,
 .uk-nav a:visited {
   color: #ffffffcc;
   opacity: 0.9;
 }
 
+/* This is for the home page nav */
 .uk-nav-sub {
   font-size: 0.8em;
   line-height: 1.3em;
@@ -177,7 +183,6 @@ footer {
 
 .portfolioItem {
   padding: 20px 0px;
-  /* height: 325px; */
 }
 
 .portfolioItem p {
