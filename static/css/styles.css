@@ -63,6 +63,7 @@ img.reportImage {
   border-radius: 12px;
   height: 325px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 img.reportImagePano {
