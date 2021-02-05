@@ -6,7 +6,13 @@ body {
 }
 
 main {
-  padding: 20px;
+  padding: 10px;
+}
+
+@media (min-width: 960px) {
+  main {
+    padding: 20px;
+  }
 }
 
 .uk-modal-dialog {
@@ -41,10 +47,26 @@ h3 {
   margin: 0px;
 }
 
+@media (max-width: 959px) {
+  h3 {
+    font-size: 1.75em;
+    color: #fff;
+    margin: 0px;
+  }
+}
+
 h4 {
   font-size: 2em;
   color: #fff;
   margin: 0px;
+}
+
+@media (max-width: 959px) {
+  h4 {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0px;
+  }
 }
 
 h5 {
@@ -151,13 +173,20 @@ img.modalImage {
   z-index: 100;
 }
 
-#social-links {
+.social-links {
   text-align: center;
   font-size: 2em;
   margin: 20px 0px;
 }
 
-#social-links a {
+@media (max-width: 959px) {
+  .social-links {
+    font-size: 1em;
+    margin: 10px 0px;
+  }
+}
+
+.social-links a {
   margin: 0 6px;
 }
 
@@ -174,6 +203,12 @@ a.hidden-link:hover {
   padding: 12px;
 }
 
+@media (max-width: 959px) {
+  .container {
+    padding: 8px;
+  }
+}
+
 .tuck-content {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -184,7 +219,19 @@ footer {
 }
 
 .portfolioItem {
-  padding: 20px 0px;
+  padding: 10px 0px;
+  border: none;
+}
+
+@media (min-width: 960px) {
+  .portfolioItem {
+    padding: 20px 0px;
+    border-top: .25px solid #d5dae440;
+    margin-left: 0px;
+  }
+  .portfolioItem .uk-grid>*  {
+    padding-left: 0px !important;
+  }
 }
 
 .portfolioItem p {
@@ -222,6 +269,15 @@ footer {
 .portBtn img {
   width: 150px;
 }
+
+.androidBtn {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-left: 0px !important;
+  width: 137px;
+}
+
+
 
 .title-404 {
   font-size: 3em;

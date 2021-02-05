@@ -9,9 +9,13 @@
 			<%- include('../partials/topnav'); %>
 			<main>
 				<h3>Development Portfolio</h3>
-        <p>&nbsp;</p>
+        <p class="uk-visible@m" style="margin: 10px 0px;">&nbsp;</p>
         <div class="portfolioItem" uk-grid>
-					<div class="uk-width-2-3">
+          <div class="uk-width-1-3@m uk-text-center">
+						<img data-src="/images/dev/outdoor-adventures-sm.jpg" alt="Outdoor Adventures Screenshot" class="reportImage uk-visible@s " uk-img uk-toggle="target: #outdoor">
+						<img data-src="/images/dev/outdoor-adventures-sm.jpg" alt="Outdoor Adventures Screenshot" class="reportImage uk-hidden@s " uk-img>
+          </div>
+					<div class="uk-width-2-3@m uk-flex-first@m">
             <h4>Outdoor Adventures <span class="inlineIcon fab fa-js-square fa-lg"></span><span class="inlineIcon fab fa-node-js fa-lg"></span></h4>
             <p>
               <span class="inlineStrong">Description:&nbsp;</span>
@@ -30,12 +34,13 @@
               </a>
             </div>
           </div>
-					<div class="uk-width-1-3">
-						<img data-src="/images/dev/outdoor-adventures-sm.jpg" alt="Outdoor Adventures Screenshot" class="reportImage" uk-img uk-toggle="target: #outdoor">
-          </div>
         </div>
 				<div class="portfolioItem" uk-grid>
-					<div class="uk-width-2-3">
+          <div class="uk-width-1-3@m uk-text-center">
+						<img data-src="/images/dev/homework-14-sm.jpg" alt="Homework 14 Screenshot" class="reportImage uk-visible@s" uk-img uk-toggle="target: #homework14">
+						<img data-src="/images/dev/homework-14-sm.jpg" alt="Homework 14 Screenshot" class="reportImage uk-hidden@s" uk-img>
+          </div>
+					<div class="uk-width-2-3@m uk-flex-first@m">
             <h4>Reverse Engineering Code <span class="inlineIcon fab fa-js-square fa-lg"></span><span class="inlineIcon fab fa-uikit fa-lg"></span></h4>
             <p>
               <span class="inlineStrong">Description:&nbsp;</span>
@@ -52,12 +57,13 @@
               </a>
             </div>
           </div>
-					<div class="uk-width-1-3">
-						<img data-src="/images/dev/homework-14-sm.jpg" alt="Homework 14 Screenshot" class="reportImage" uk-img uk-toggle="target: #homework14">
-          </div>
         </div>
         <div class="portfolioItem" uk-grid>
-					<div class="uk-width-2-3">
+          <div class="uk-width-1-3@m uk-text-center">
+						<img data-src="/images/dev/code-quiz-sm.jpg" alt="Code Quiz Screenshot" class="reportImage uk-visible@s" uk-img uk-toggle="target: #codequiz">
+						<img data-src="/images/dev/code-quiz-sm.jpg" alt="Code Quiz Screenshot" class="reportImage uk-hidden@s" uk-img>
+          </div>
+					<div class="uk-width-2-3@m uk-flex-first@m">
             <h4>Code Quiz <span class="inlineIcon fab fa-js-square fa-lg"></span></h4>
             <p>
               <span class="inlineStrong">Description:&nbsp;</span>
@@ -73,12 +79,13 @@
               </a>
             </div>
 					</div>
-					<div class="uk-width-1-3">
-						<img data-src="/images/dev/code-quiz-sm.jpg" alt="Code Quiz Screenshot" class="reportImage" uk-img uk-toggle="target: #codequiz">
-          </div>
         </div>
 				<div class="portfolioItem" uk-grid>
-          <div class="uk-width-2-3">
+          <div class="uk-width-1-3@m uk-text-center">	
+						<img data-src="/images/dev/password-generator-sm.jpg" alt="Password Generator Screenshot" class="reportImage uk-visible@s" uk-img uk-toggle="target: #pwgen">
+						<img data-src="/images/dev/password-generator-sm.jpg" alt="Password Generator Screenshot" class="reportImage uk-hidden@s" uk-img>
+          </div>
+          <div class="uk-width-2-3@m uk-flex-first@m">
             <h4>Password Generator <span class="inlineIcon fab fa-js-square fa-lg"></span></h4>
             <p>
               <span class="inlineStrong">Description:&nbsp;</span>
@@ -95,13 +102,14 @@
               </a>
             </div>
           </div>
-          <div class="uk-width-1-3">	
-						<img data-src="/images/dev/password-generator-sm.jpg" alt="Password Generator Screenshot" class="reportImage" uk-img uk-toggle="target: #pwgen">
-          </div>
 				</div>
         <div class="portfolioItem" uk-grid>
-					<div class="uk-width-2-3">
-            <h4>Tour of Honor (iOS and Android) <span class="inlineIcon fab fa-swift fa-lg"></span><span class="inlineIcon fab fa-java fa-lg"></span></h4>
+          <div class="uk-width-1-3@m uk-text-center">	
+						<img data-src="/images/dev/toh-apps-sm.png" alt="Tour of Honor Mobile App Screenshot" class="reportImage uk-visible@s" uk-img uk-toggle="target: #gwen">
+						<img data-src="/images/dev/toh-apps-sm.png" alt="Tour of Honor Mobile App Screenshot" class="reportImage uk-hidden@s" uk-img>
+          </div>
+					<div class="uk-width-2-3@m uk-flex-first@m">
+            <h4>Tour of Honor Mobile <span class="inlineIcon fab fa-swift fa-lg"></span><span class="inlineIcon fab fa-java fa-lg"></span></h4>
             <p>
               <span class="inlineStrong">Description:&nbsp;</span>
               The <a href="https://www.tourofhonor.com" target="_blank">Tour of Honor</a> is a motorcycle rally that uses various military and first responder memorials as rally locations. Starting out using physical 
@@ -111,25 +119,22 @@
             </p>
             <p><span class="inlineStrong">Key Technologies Used:&nbsp;</span>Xcode, Android Studio, Swift, SwiftUI, Java</p>
             <div>
-              <a href="https://github.com/DJFriar/iTOH-2" class="uk-button uk-button-default  portBtn" target="_blank">
-                <span class="inlineIcon fab fa-github fa-lg"></span>View iOS Source
+              <a href="https://github.com/DJFriar/iTOH-2" class="uk-button uk-button-default portBtn"  target="_blank">
+                <span class="inlineIcon fab fa-github fa-lg"></span>View <span class="inlineIcon fab fa-apple fa-lg"></span> Source
               </a>
-              <a href="https://github.com/DJFriar/aTourofHonor" class="uk-button uk-button-default  portBtn" target="_blank">
-                <span class="inlineIcon fab fa-github fa-lg"></span>View Android Source
+              <a href="https://apps.apple.com/us/app/tour-of-honor/id1502873246?itsct=apps_box&amp;itscg=30200" class="portBtn" target="_blank">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1585526400&h=12560d5f7739fe5f75e26c3b05eddee5" alt="Download on the App Store" style="width: 120px; height: 40px;">
               </a>
             </div>
             <div>
-              <a href="https://apps.apple.com/us/app/tour-of-honor/id1502873246?itsct=apps_box&amp;itscg=30200" class="portBtn"  target="_blank">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1585526400&h=12560d5f7739fe5f75e26c3b05eddee5" alt="Download on the App Store" style="width: 150px; height: 40px;">
+              <a href="https://github.com/DJFriar/aTourofHonor" class="uk-button uk-button-default portBtn"  target="_blank">
+                <span class="inlineIcon fab fa-github fa-lg"></span>View <span class="inlineIcon fab fa-android fa-lg"></span> Source
               </a>
-              <a href='https://play.google.com/store/apps/details?id=net.tommyc.android.tourofhonor2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="uk-button portBtn" target="_blank">
+              <a href='https://play.google.com/store/apps/details?id=net.tommyc.android.tourofhonor2&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' class="uk-button portBtn androidBtn" target="_blank">
                 <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
               </a>
             </div>
 					</div>
-					<div class="uk-width-1-3">	
-						<img data-src="/images/gwen.jpeg" alt="2018 Honda Gold Wing Tour DCT" class="reportImage" uk-img uk-toggle="target: #gwen">
-          </div>
 				</div>
 			</main>
 		</div>
@@ -139,8 +144,8 @@
 		<div id="gwen"class="uk-modal-full" uk-modal>
 			<div class="uk-modal-dialog uk-modal-body">
 				<button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-				<h4 class="uk-modal-title">Tour of Honor</h4>
-				<img data-src="/images/gwen.jpeg" alt="2018 Honda Gold Wing Tour DCT" class="modalImage" uk-img>
+				<h4 class="uk-modal-title">Tour of Honor (Android & iOS)</h4>
+				<img data-src="/images/dev/toh-apps-lg.png" alt="Tour of Honor Mobile App Screenshot" class="modalImage" uk-img>
 			</div>
 		</div>
 		<div id="pwgen"class="uk-modal-full" uk-modal>
