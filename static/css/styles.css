@@ -277,7 +277,11 @@ footer {
   width: 137px;
 }
 
-
+@media (max-width: 960px) {
+  .portBtnSection {
+    text-align: center;
+  }
+}
 
 .title-404 {
   font-size: 3em;
