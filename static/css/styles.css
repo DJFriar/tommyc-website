@@ -221,3 +221,14 @@ footer {
 .portBtn img {
   width: 150px;
 }
+
+.title-404 {
+  font-size: 3em;
+  color: #fff;
+  margin: 0px;
+}
+
+/* This removes the blue border that was being added by the UIKit tooltip. */
+*:focus {
+  outline: none !important;
+}
