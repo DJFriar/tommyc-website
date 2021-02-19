@@ -26,6 +26,10 @@ module.exports = function (app) {
     res.render("pages/misc");
   });
 
+  app.get("/blog", function (req, res) {
+    res.render("pages/blog");
+  });
+
   app.get("/devresume", function (req, res) {
     res.render("pages/devresume");
   });
@@ -36,6 +40,10 @@ module.exports = function (app) {
 
   app.get("/riderresume", function (req, res) {
     res.render("pages/riderresume");
+  });
+
+  app.get("/bikehistory", function (req, res) {
+    res.render("pages/motorcycling/bikehistory");
   });
 
   app.get("/ridereports", function (req, res) {
@@ -50,7 +58,15 @@ module.exports = function (app) {
     res.render("pages/ridereports/iba2");
   });
 
-  // If no matching route is found default to home
+  app.get("/tacomadetails", function (req, res) {
+    res.render("pages/vehicles/tommytacoma");
+  });
+
+  app.get("/carhistory", function (req, res) {
+    res.render("pages/vehicles/carhistory");
+  });
+
+  // If no matching route is found, return the 404 page
   app.get("*", function (req, res) {
     res.render("pages/404");
   });

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../../partials/head'); %>
+</head>
+
+<body>
+  <div class="container" uk-height-viewport="expand: true">
+    <div class="gradientbar"></div>
+    <%- include('../../partials/topnav'); %>
+      <div>&nbsp;</div>
+      <main>
+        <h3>2021 Toyota Tacoma TRD Sport 4x4</h3>
+        <div class="uk-text-center">
+          <img data-src="/images/tacoma.jpeg" alt="2021 Toyota Tacoma TRD Sport 4x4" class="reportImageLg" uk-img
+            uk-toggle="target: #tacoma">
+          <p>I bought her on February 6th, 2021 from Beaver Toyota in St. Augustine, FL.</p>
+        </div>
+        <div uk-grid>
+          <div class="uk-width-1-2">
+            <h4>Modifications</h4>
+            <ul>
+              <li>Llumar Ceramic Window Tint (15% rears, 25% fronts)</li>
+              <li>SimpleUSB Mirror to USB Power Adapter</li>
+              <li>Garmin DashCam 45</li>
+              <li>TacoGarage Dashboard Multi-Mount (DMM)</li>
+              <li>ProClipUSA iPhone 12 Pro Max Powered Phone Holder</li>
+            </ul>
+          </div>
+          <div class="uk-width-1-2">
+            <h4>Planned Mods</h4>
+            <ul>
+              <li>Custom Aux Fuse Panel</li>
+              <li>Bilstein 5160/5100</li>
+              <li>Deaver Add-A-Leaf</li>
+              <li>Kicker Hideaway HS10 Powered Subwoofer</li>
+              <li>Yaesu FTM-300DR Mobile Ham Radio</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+  </div>
+  <footer>
+    <%- include('../../partials/footer'); %>
+  </footer>
+
+  <div id="tacoma" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+      <h4 class="uk-modal-title">2021 Toyota Tacoma TRD Sport 4x4</h4>
+      <img data-src="/images/tacoma.jpeg" alt="2021 Toyota Tacoma TRD Sport 4x4" class="modalImage" uk-img>
+    </div>
+  </div>
+</body>
+
+</html>

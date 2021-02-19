@@ -88,6 +88,13 @@ img.reportImage {
   cursor: pointer;
 }
 
+img.reportImageLg {
+  border-radius: 12px;
+  height: 450px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
 img.reportImagePano {
   border-radius: 12px;
   height: 325px;
