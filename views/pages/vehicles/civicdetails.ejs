@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../../partials/head'); %>
+</head>
+
+<body>
+  <div class="container" uk-height-viewport="expand: true">
+    <div class="gradientbar"></div>
+    <%- include('../../partials/topnav'); %>
+      <div>&nbsp;</div>
+      <main>
+        <h3>2022 Honda Civic Touring</h3>
+        <div class="uk-text-center">
+          <img data-src="/images/civic.jpeg" alt="2022 Honda Civic Touring" class="reportImageLg" uk-img
+            uk-toggle="target: #civic">
+          <p>I bought him on August 10th, 2022 from David McDavid Honda in Frisco, TX.</p>
+        </div>
+        <div uk-grid>
+          <div class="uk-width-1-2">
+            <h4>Modifications</h4>
+            <ul>
+              <li>Llumar Ceramic Window Tint (15% rears, 25% fronts)</li>
+              <li>SimpleUSB Mirror to USB Power Adapter</li>
+              <li>Garmin DashCam 45</li>
+            </ul>
+          </div>
+          <div class="uk-width-1-2">
+            <h4>Planned Mods</h4>
+            <ul>
+              <li>Front Strut Tower Brace</li>
+              <li>Lowering Springs</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+  </div>
+  <footer>
+    <%- include('../../partials/footer'); %>
+  </footer>
+
+  <div id="civic" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+      <h4 class="uk-modal-title">2022 Honda Civic Touring</h4>
+      <img data-src="/images/civic.jpeg" alt="2022 Honda Civic Touring" class="modalImage" uk-img>
+    </div>
+  </div>
+</body>
+
+</html>

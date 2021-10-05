@@ -58,8 +58,16 @@ module.exports = function (app) {
     res.render("pages/ridereports/iba2");
   });
 
+  app.get("/ridereports/rat", function (req, res) {
+    res.render("pages/ridereports/rat");
+  });
+
   app.get("/tacomadetails", function (req, res) {
     res.render("pages/vehicles/tommytacoma");
+  });
+
+  app.get("/civicdetails", function (req, res) {
+    res.render("pages/vehicles/civicdetails");
   });
 
   app.get("/carhistory", function (req, res) {

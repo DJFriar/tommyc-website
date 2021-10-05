@@ -300,3 +300,7 @@ footer {
 *:focus {
   outline: none !important;
 }
+
+.storyBlock {
+  margin-bottom: 12px;
+}
