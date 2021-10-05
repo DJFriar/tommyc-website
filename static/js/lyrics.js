@@ -13,7 +13,7 @@ function getRandomLyric() {
   document.getElementById("songlyric").innerHTML = lyrics[randomNumber];
 }
 
-// Artists for the above lyrics
+// Songs & Artists for the above lyrics
 // Karn Evil 9 1st Impression Part 2 by Emerson, Lake & Palmer
 // Devil's Train by Lab Rats
 // Be Like That by Kane Brown
